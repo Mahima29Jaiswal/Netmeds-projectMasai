@@ -1,13 +1,22 @@
+*:focus{
+    outline: none;
+}
 body{
     margin: 0px;
     background-color: #f6f6f7;
     margin-bottom: 100px;
+    font-family: system-ui;
 }
 #navbar{
     display: flex;
     justify-content: space-evenly;
     background-color: #24aeb1;
     height: 90px   ;
+}
+
+#inpu1>span>p>#inpu3{
+    color: grey;
+    padding-left: 25px;
 }
 #navbar>div>div>img{
     width: 20px;
@@ -25,17 +34,22 @@ body{
 
 }
 
+form>input{
+    font-size: 18px;
+}
+
 #navbar>div>div{
     display: flex;
     margin-top: 25px;
     margin-right: 10px;
 }
 #navbar>div>input{
-    width: 700px;
+    width: 550px;
     height: 48px;
-    margin-top: 18px;
+    margin-top: 25px;
     border-color: transparent;
-    border-radius: 5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
     margin-left: -60px;
     
 }
@@ -75,12 +89,25 @@ form>input{
 
 #inpu{
     display: block;
-    width: 80%;
+    width: 50%;
     border: none;
     height: 48px;
     border-bottom: 2px solid gray;
 }
 
-#inpu::placeholder{
-    margin-bottom: -10px;
+#inpu1{
+    background-color: white;
+    width: 220px;
+    height: 48px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+}
+#inpu1>span>p{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#inpu1>span>p>span{
+    color: #24aeb1;
 }
