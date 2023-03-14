@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    background-color: #f6f6f7;
+    margin-bottom: 100px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #24aeb1;
+    height: 90px   ;
+}
+#navbar>div>div>img{
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+    margin-right: 5px;
+}
+
+#navbar>div>div>p{
+    color: white;
+}
+
+#navbar>div{
+    display: flex;
+
+}
+
+#navbar>div>div{
+    display: flex;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+#navbar>div>input{
+    width: 700px;
+    height: 48px;
+    margin-top: 18px;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-left: -60px;
+    
+}
+#navbar>div>img{
+    width: 250px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+#parent-box{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+#parent-box>div>div>p{
+    width: 380px;
+}
+
+#parent-box>div>div>form>p{
+    font-size: 11px;
+    margin-bottom: -7px;
+}
+
+form>input{
+    display: block;
+    width: 80%;
+    border: none;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#inpu{
+    display: block;
+    width: 80%;
+    border: none;
+    height: 48px;
+    border-bottom: 2px solid gray;
+}
+
+#inpu::placeholder{
+    margin-bottom: -10px;
+}
