@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Script/Medicine.css">
+    <title>Prescription - Search & Shop</title>
+</head>
+<body>
+    <div class="container">
+         <div class="navbar">   <!-- // Navbar link  -->
+        <p>Navbar</p>
+        </div> 
+    <div class="nav-section">
+           <!-- navigation section -->
+        <nav class ="navigation">
+          
+            <div>COVID Essentials</div>
+            <div >Diabetes</div>
+            <div >Veterinary</div>
+            <div >Eyewear</div>
+            <div >Ayush</div>
+            <div >Ayurvedic</div>
+            <div >Homeopathy</div>
+            <div >Fitness</div>
+            <div >MOM & BABY</div>
+            <div >Devices</div>
+            <div >Surgicals</div>
+            <div >Sexual Wellness</div>
+            <div >Treatments</div>
+        </nav>
+     </div> 
+     
+     <div>
+        <a href="home.html">Home &gt;</a>
+        
+        <a href="prescription.html">Prescription</a>
+     </div>
+     <div class="press_t">
+     <div class="description">
+        <h2>Find Your Prescription Medicines</h2>
+        <span>Shop by Drug Category</span>
+      </div>
+    </div>   
+    <div class="in_letter">
+        <table>
+            <thead>
+                <tr>
+                    <td onclick="filterbyNameA()">A</td> <td onclick="filterbyNameB()">B</td> <td onclick="filterbyNameC()">C</td> 
+                    <td onclick="filterbyNameD()"> D</td> 
+                    <td onclick="filterbyNameE()">E</td><td>F</td><td>G</td><td>H</td><td>I</td><td class="In_disable">J</td>
+                    <td>K</td><td>L</td> <td>M</td> <td>M</td> <td>N</td> <td>O</td> <td>P</td> <td class="In_disable">Q</td> <td>R</td>
+                    <td>S</td> <td>T</td> <td>U</td> <td>V</td> <td>W</td> <td class="In_disable">X</td> <td class="In_disable">Y</td> <td class="In_disable">Z</td> <td id="all">ALL</td>
+                </tr>
+            </thead>
+        </table>                
+    </div>
+    <div id="Med">
+        <div>
+            <h2 class="h2">A</h2> <p class="Medname" onclick="window.location.href='Acne.html'">Acne (419)</p> <p class="Medname">Alcohol Addiction (14)</p> <p class="Medname"> Allergies (1158)</p> 
+            <p class="Medname">Alzheimer (152)</p> <p class="Medname">Amoebiasis (23)</p>  <p class="Medname">Anaemia (527)</p>   <p class="Medname">Anaesthesia Local (64)</p>        
+             <p class="Medname">Angina (312)</p>   <p class="Medname">Anxiety (41)</p>  <p class="Medname">Appetite (58)</p>   <p class="Medname">Arthritis (166)</p>  
+             <h2 class="h2">B</h2>
+             <p class="Medname"> Bacterial Infections (944)</p><p class="Medname">Bladder And Prostate Disorders (348)</p>
+             <p class="Medname">Bleeding Disorders (169)</p><p class="Medname">Blood Clot (716)</p> <p class="Medname">Bone Metabolism (109)</p>
+             <h2 class="h2">C</h2>
+             <p class="Medname">Cancer/Oncology (1375)</p> <p class="Medname">Cholelithiasis/Gall Stones (137)</p><p class="Medname">Constipation (320)</p>
+             <p class="Medname">Cough And Cold (1086)</p>
+             <h2 class="h2">D</h2>
+             <p class="Medname">Dandruff (81)</p>
+             <p class="Medname">Depression (544)</p>
+             <p class="Medname"> Diabetes (4431)</p>
+             <p class="Medname">Digestion (139)</p>
+        </div>
+        <div>
+            <h2 class="h2">E</h2>
+            <p class="Medname">Ear Conditions (59)</p> <p class="Medname">Epilepsy/Convulsion (1034)</p> <p class="Medname">Eye conditions (492)</p>
+            <h2 class="h2">F</h2>
+            <p class="Medname" onclick="window.location.href='Fever.html'">Fever (425)</p> <p class="Medname">Fungal (1390)</p> <p class="Medname">Fungal Infections (1675)</p>
+            <h2 class="h2">G</h2>
+             <p class="Medname">Gastro Intestinal Motility Disorders (82)</p> <p class="Medname">General-P (98)</p> <p class="Medname">Glaucoma (190)</p> <p class="Medname">Gout (133)</p>
+            <h2 class="h2">H</h2>
+            <p class="Medname">Haematopoiesis (154)</p> <p class="Medname">Haemorrhoid (53)</p> <p class="Medname">Hair Loss (270)</p> <p class="Medname">Heart Failure (49)</p>
+            <p class="Medname">High Cholesterol (1687)</p> <p class="Medname">Hormonal Therapy (1285)</p> <p class="Medname">Hyperpigmentation (191)</p>
+            <p class="Medname">Hypertension (4408)</p> <p class="Medname">Hypothyroidism (137)</p>
+            <h2 class="h2">I</h2>
+            <p class="Medname">Idiopathic Pulmonary Fibrosis (41)</p> <p class="Medname">Impotence/Erectile Dysfunction (Ed) (143)</p> <p class="Medname">Infection (5631)</p>
+        </div>
+        <div><h2 class="h2">K</h2>
+            <p class="Medname" onclick="window.location.href='Kidney.html'">Kidney Disease/Stones (120)</p>
+            <h2 class="h2">L</h2>
+            <p class="Medname"> Liver Diseases (118)</p> <p class="Medname">Lubrication (3)</p>
+            <h2 class="h2">M</h2>
+            <p class="Medname">Malarial (206)</p> <p class="Medname">Migraine (160)</p> <p class="Medname">Muscle Cramps/Spasticity (337)</p>
+            <p class="Medname">Muscle Spasm (296)</p> <p class="Medname">Mydriasis (40)</p>
+            <h2 class="h2">N</h2>
+            <p class="Medname">Nasal Congestion (200)</p> <p class="Medname">Neuropathic Pain (729)</p> <p class="Medname">Nootropics And Neurotrophics (271)</p>
+            <h2 class="h2">O</h2>
+            <p class="Medname">Oral Care (269)</p> <p class="Medname">Osteoporosis (83)</p>
+            <h2 class="h2">P</h2>
+            <p class="Medname">Pain relief (2395)</p> <p class="Medname">Parasitic Worms (217)</p> <p class="Medname">Parkinsonism (152)</p>
+            <p class="Medname">Peripheral Hypertension (19)</p> <p class="Medname">Poisoning/Overdose (55)</p> <p class="Medname">Psoriasis/Seborrhea/Ichthyosis (125)</p>
+            <p class="Medname">Psychosis (312)</p>
+            <h2 class="h2">R</h2>
+        </div>
+        <div>
+            <p onclick="window.location.href='Rabies.html'">Rabies (9)</p> <p class="Medname">Rheumatoid Arthritis (9)</p>
+            <h2 class="h2">S</h2>
+            <p class="Medname">Scabies (82)</p> <p class="Medname">Schizophrenia (407)</p> <p class="Medname">Skin Infections (902)</p> <p class="Medname">Sunscreen Preparations (103)</p>
+            <p class="Medname">Supplements (4524)</p> <p class="Medname"> Surgicals (28)</p>
+            <h2 class="h2">T</h2>
+            <p class="Medname">Tetanus (3)</p> <p class="Medname">Thrombotic Disorder (136)</p> <p class="Medname">Tuberculosis (Tb) (1)</p>
+            <h2 class="h2">U</h2>
+            <p class="Medname">Ulcer/Reflux/Flatulence (2168)</p> <p class="Medname">Ulcerative Colitis/Bowel Inflammatory Disease (114)</p>
+            <p class="Medname">Urinary Retention (99)</p> <p class="Medname">Uterus Conditions (68)</p>
+            <h2 class="h2">V</h2>
+            <p class="Medname">Vaccines (123)</p> <p class="Medname">Vaginal Conditions (58)</p>
+            <p class="Medname">Varicose Veins (20)</p> <p class="Medname">Viral infections (369)</p> <p class="Medname">Vomitting/Emesis (345)</p>
+            <h2 class="h2">W</h2>
+            <p class="Medname">Warts/Calluses/Other Skin Lesion (27)</p> <p class="Medname">Weight Loss (27)</p> <p class="Medname">Wound Care (144)</p>
+        </div>
+    </div>
+    
+</div>        
+<div id="containerG"> 
+    <div id="card">
+      <img class="img" src="	https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg
+      " alt="">
+    </div>
+    <div class="card2">
+        <p class="p">Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at<BR> 
+            reasonable prices to over 7 million happy customers – PAN India.</p>
+    </div>
+</div>
+
+</body>
+</html>
