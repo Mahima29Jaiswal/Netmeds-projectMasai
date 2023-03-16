@@ -1,0 +1,125 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    height:130px;
+   margin-top: 0px;
+    background-color:#32aeb1 ;
+}
+.container{
+    background-color: #f3f3f3;
+    margin: 0%;
+    padding: 0%;
+    margin: 0%;
+
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: smaller;
+    color: #151b39 ;
+}
+a{
+    text-decoration: none;
+    color: #378b87 ;
+    font-size: smaller;
+}
+.press_t{
+    margin-left: 1%;
+
+}
+.description{
+    color: #378b87 ;
+}
+.description span{
+    font-style: italic;
+    display: block;
+    margin-bottom: 3%;
+}
+/* .list_n{
+    width: 100%;
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 8px 0;
+    text-align: center;
+    display: flex;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;
+    background: #fff;
+    margin: 0;
+    -ms-flex-pack: justify ;
+}
+.inletter{
+    width: 100%;
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 8px 0px;
+    text-align: center;
+    overflow: hidden;
+} */
+#info {
+    margin-left: 8%;
+    margin-right: 5%;
+  }  
+table,
+td {
+  border-right: 1px groove grey;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: grey;
+}
+td:hover {
+    color: rgb(50, 174, 177);
+  }
+  
+  table {
+    width: 100%;
+    height: 40px;
+  }
+  .In_disable{
+    cursor: default;
+    color: #ccc;
+    pointer-events: none;
+  }
+  #Med {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .Medname {
+    font-size: 18px;
+    color: #242a46;
+  }
+  .h2,
+  .h3 {
+    font-size: 20px;
+  }
+  #all {
+    color: rgb(50, 174, 177);
+  }
+  #card{
+    margin-left: 2%;
+  }
+  #containerG {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #containerG .h1,
+  .p {
+    color: #9fa1a5;
+  }
+  
+        
+
