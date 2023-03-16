@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>nav bar</title>
+    <style>
+        #nav-parent{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color:#32aeb1;
+            /* border: 2px solid teal; */
+              
+        }
+        #nav-image img{
+            margin-top: 10px;
+            width: 150px;
+             
+        }
+        #nav-middle{
+            display: flex;
+            /* border: 2px solid teal; */
+            border-radius: 10px;
+            background-color: white;
+            width: 50%;
+        }
+        #nav-last{
+            display: flex;
+            width: 30%;
+            color:white;
+            justify-content: space-between;
+            /* border: 2px solid teal; */
+            
+        }
+        .nav-upload{
+            display: flex;
+            
+        }
+        .nav-offer{
+            display: flex;
+             
+
+        }
+        .nav-cart{
+            display: flex;
+             
+        }
+        .nav-login{
+            display: flex;
+             
+        }
+       .nav-select{
+       
+        border-bottom-left-radius:10px; 
+        border:none;
+       }
+       #delivery{
+        border-bottom-left-radius:10px; 
+        border-top-left-radius:10px; 
+        height: 100%;
+        width: 100%;
+        border:none;
+        border-right:1px solid ;
+
+       }
+       .nav-input{
+        /* border: 2px solid teal; */
+        width: 70%;
+       }
+       .nav-input>input{
+        height: 90%;
+        width: 90%;
+        border:none;
+       }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="nav-parent">
+        <div id="nav-image">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg"      alt="netmedimage">
+        </div>
+        <div id="nav-middle">
+            <div class="nav-select">
+                
+
+                <select name="delivery" id="delivery">
+                    <option value="deliver to">Deliver to</option>
+                  <option value="address">Enter Your address  address"></option>
+                  <option value="pincode">Pincode</option>
+                </select>
+
+        </div>
+        <div class="nav-input">
+            <input type="text" placeholder="Search for medicines and Wellness product">
+        </div>
+        </div>
+        <div id="nav-last"> 
+            <div class="nav-upload">
+               <img src="" alt="">
+                <p>Upload</p>
+            </div> 
+            <div class="nav-offer">
+                <p>🗼</p>
+                <p>Offer</p>
+            </div>
+            <div class="nav-cart">
+                <p>☄️
+                </p>
+                <p>Cart</p>
+            </div> 
+            <div class="nav-login">
+                <p>🔍</p>
+              im  <p>Login/SignUp</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
