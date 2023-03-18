@@ -4,19 +4,437 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Script/Medicine.css">
+    <link rel="stylesheet" href="Script/Medicine.css"/>
     <title>Prescription - Search & Shop</title>
-</head>
-<body>
-    <div class="container">
-        
-         <div class="navbar">   <!-- // Navbar link  -->
-        <p>Navbar</p>
-        </div> 
+<style>
+     
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
 
-        <div style="margin-left: 5%;">
+        #product {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            width: 95%;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+
+        #product>div>img {
+            width: 100%;
+        }
+
+        #product>div {
+            border: 1px solid #c9c9c9;
+            border-radius: 10px;
+            padding: 20px;
+            justify-content: space-between;
+            line-height: 25px;
+        }
+
+        button {
+            width: 95%;
+            color: white;
+            background-color: #24aeb1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border: 1px;
+            border-radius: 5px;
+            margin-left: 10px;
+            font-weight: bolder;
+            font-size: larger;
+            margin-top: 5px;
+            cursor: pointer
+        }
+
+        select {
+            margin-left: 5%;
+            margin-top: 100px;
+            margin-bottom: 10px;
+            width: 200px;
+            padding: 5px;
+        }
+
+        #searchBox {
+            font-family: LatoSemiBold;
+            width: 42%;
+            height: 50px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1px;
+            margin: 18px;
+            background: white;
+            margin-left: -1%;
+        }
+
+        .val {
+            width: 50%;
+            height: 20px;
+        }
+
+        #sel {
+            width: 25%;
+            height: 35px;
+            vertical-align: middle;
+            margin: 8px;
+            border: none;
+            display: inline-block;
+            color: #24aeb1;
+            font-family: LatoSemiBold;
+
+        }
+
+        #mainbox {
+            width: 110%;
+            height: 100px;
+            background-color: #32aeb1;
+            font-family: LatoSemiBold;
+            position: fixed;
+            margin-top: -100px;
+            margin-left: -1%
+        }
+
+        .mainImg {
+            width: 12%;
+            margin: 15px;
+            vertical-align: middle;
+            height: 50px;
+            background-color: #32aeb1;
+            display: inline-block;
+            font-family: LatoSemiBold;
+            margin-left: 10%;
+            margin-top: 30px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #32aeb1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        #boxes {
+            width: 31%;
+            height: 23px;
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            font-weight: 500;
+            margin-top: -25px;
+        }
+
+
+        .b1 {
+            width: 25%;
+            height: 9px;
+            display: inline-block;
+            padding: 5px;
+            color: white;
+            font-weight: 500
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .icon {
+            margin: -5px;
+        }
+
+        #numprod {
+            display: block;
+            background: #ee4380 !important;
+            color: #fff !important;
+            border-radius: 6.5px;
+            padding: 0px;
+            margin-bottom: -1%;
+            width: 12%;
+            text-align: center;
+            line-height: 14px;
+            font-family: LatoBold;
+            font-size: 10px;
+            margin-left: 10%;
+        }
+
+        .b1 a {
+            text-decoration: none;
+            color: white
+        }
+
+        #searchbar {
+            width: 70%;
+            height: 40px;
+            border: transparent;
+        }
+
+        #secondbigbox {
+            background: #32aeb1;
+            width: auto;
+            margin-left: -1%;
+        }
+
+        .row {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px
+        }
+
+        .row>div {
+            height: 50px;
+            flex-basis: 180px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        #rimg {
+            padding: 6px;
+            display: inline-block;
+        }
+
+        ul.nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 36px;
+            line-height: 26px;
+            font-size: 13px;
+            color: black;
+        }
+
+        ul.nav li {
+            float: left;
+        }
+
+        ul.nav a {
+            display: block;
+            padding: 0px 28px;
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 7px;
+        }
+
+        .nbox {
+            width: 80%;
+            height: 56px;
+            margin: auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.navbar {
+            margin: auto;
+            margin-left: 130px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul.navbar li {
+            float: left;
+        }
+
+        .la {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(11, 18, 25, .75);
+            margin-bottom: -27px;
+            list-style: none;
+            padding: 11px;
+            margin-right: 8px;
+            margin-top: -3px;
+        }
+
+        .nav {
+            width: 70%;
+            height: 100px;
+            border: 1px solid yellow;
+
+        }
+
+        .dbox {
+            width: 96px;
+            height: 41px;
+            display: inline-block;
+            vertical-align: bottom;
+            font-family: LatoSemiBold;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .med {
+            font-family: LatoSemiBold;
+            font-size: 16px;
+            color: white;
+        }
+
+        .pmed {
+
+            color: white;
+            margin-top: -35px;
+            margin-left: 60px;
+            font-family: LatoSemiBold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 220px;
+            font-size: 12px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+</style>
+</head>
+
+<body>
+ <!-- // Navbar link  -->
+    <div id="mainbox">
+
+        <a href="index.html">
+            <div class="mainImg">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
+            </div>
+        </a>
+  
+        <div id="searchBox">
+            <select id="sel">
+                <option value=""> Deliver to <span class="blue">1011100</span>
+                </option>
+                <option class="val" value="Other"> Other
+                </option>
+  
+  
+            </select>
+            <input id="searchbar" type="text" name="search" placeholder="Search Medicines and Wellness Product.." />
+        </div>
+        <div id="boxes">
+            <div class="b1"> <a href=""> <img class="icon"
+                        src="https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg"> &nbsp;Upload</a>
+  
+            </div>
+  
+            <div class="b1">
+                <span id="numprod"></span>
+                <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
+                <a href="cart.html"> Cart
+  
+            </div>
+  
+  
+            <div class="b1">
+                <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
+                <a href="signin.html"> SignIn/SignUp
+                </a>
+            </div>
+        </div>
+  
+    </div>
+  
+    <div id="secondbigbox">
+      <div class="row">
+  
+          <div>
+              <img id="rimg"
+                  src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
+              <div class="dbox">
+                  <div class="dropdown">
+                      <a href="med.html">
+                          <div class="med">Medicines</div>
+                      </a>
+                      <div class="dropdown-content">
+                          <a href="#">All Medicines</a>
+                          <a href="#">Previously ordered products</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div>
+  
+              <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
+              <a href="category.html">
+                  <p class="pmed">Wellness</p>
+              </a>
+          </div>
+  
+          <div>
+              <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
+              <a href="labtest.html">
+                  <a href="lab.html">
+                      <p class="pmed">Lab Tests</p>
+                  </a>
+              </a>
+          </div>
+          <div>
+  
+              <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
+              <div class="dbox">
+                  <div class="dropdown">
+                      <a href="category.html">
+                          <div class="med">Beauty</div>
+                      </a>
+                      <div class="dropdown-content">
+                          <a href="">Body Care</a>
+                          <a href="#">Face Care</a>
+                          <a href="#">Fragrance</a>
+                          <a href="#">Hands and Feet</a>
+                          <a href="#">Home Care</a>
+                          <a href="#">Senior Care</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+  
+              <img id="rimg"
+                  src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/health-library.svg">
+              <div class="dbox">
+                  <div class="dropdown">
+                      <div class="med">Health Corner</div>
+                      <div class="dropdown-content">
+                          <a href="#">Health Library</a>
+                          <a href="#">PatientsAlike</a>
+                          <a href="#">Corona Awarness</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </div>
+  <!-- navigation section -->
+
+<div class="container">
+       
+<div style="margin-left: 4%; margin-right: 4%;">
     <div class="nav-section">
-           <!-- navigation section -->
+          
            
         <nav class ="navigation">
           
@@ -36,7 +454,7 @@
         </nav>
      </div> 
      
-     <div style="margin-left: 1%;">
+     <div class="homeside">
         
         <a href="home.html">Home &gt;</a>
         
@@ -44,18 +462,18 @@
      </div>
      <div class="press_t">
      <div class="description">
-        <h2>Find Your Prescription Medicines</h2>
+        <p>Find Your Prescription Medicines</p>
         <span>Shop by Drug Category</span>
       </div>
     </div>   
     <div class="in_letter">
         <table>
             <thead>
-                <tr>
-                    <td onclick="filterbyNameA()">A</td> <td onclick="filterbyNameB()">B</td> <td onclick="filterbyNameC()">C</td> 
-                    <td onclick="filterbyNameD()"> D</td> 
-                    <td onclick="filterbyNameE()">E</td><td>F</td><td>G</td><td>H</td><td>I</td><td class="In_disable">J</td>
-                    <td>K</td><td>L</td> <td>M</td> <td>M</td> <td>N</td> <td>O</td> <td>P</td> <td class="In_disable">Q</td> <td>R</td>
+                <tr id="row">
+                    <td >A</td> <td >B</td> <td >C</td> 
+                    <td > D</td> 
+                    <td >E</td><td>F</td><td>G</td><td>H</td><td>I</td><td class="In_disable">J</td>
+                    <td>K</td><td>L</td> <td>M</td> <td>N</td> <td>O</td> <td>P</td> <td class="In_disable">Q</td> <td>R</td>
                     <td>S</td> <td>T</td> <td>U</td> <td>V</td> <td>W</td> <td class="In_disable">X</td> <td class="In_disable">Y</td> <td class="In_disable">Z</td> <td id="all">ALL</td>
                 </tr>
             </thead>
@@ -63,7 +481,7 @@
     </div>
     <div id="Med">
         <div>
-            <h2 class="h2">A</h2> <p class="Medname" onclick="window.location.href='Acne.html'">Acne (419)</p> <p class="Medname">Alcohol Addiction (14)</p> <p class="Medname"> Allergies (1158)</p> 
+            <h2 class="h2">A</h2> <p class="Medname" onclick="window.location.href='Acne.html'"><a href="Medicine.html"></a>Acne (419)</p> <p class="Medname"><a href="Medicine.html"></a>Alcohol Addiction (14)</p> <p class="Medname"> Allergies (1158)</p> 
             <p class="Medname">Alzheimer (152)</p> <p class="Medname">Amoebiasis (23)</p>  <p class="Medname">Anaemia (527)</p>   <p class="Medname">Anaesthesia Local (64)</p>        
              <p class="Medname">Angina (312)</p>   <p class="Medname">Anxiety (41)</p>  <p class="Medname">Appetite (58)</p>   <p class="Medname">Arthritis (166)</p>  
              <h2 class="h2">B</h2>
@@ -131,13 +549,24 @@
 <div id="containerG"> 
     <div id="card">
       <img class="img" src="	https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg
-      " alt="">
+      " alt="med logo">
     </div>
     <div class="card2">
-        <p class="p">Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at<BR> 
+        <p>Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at<BR> 
             reasonable prices to over 7 million happy customers – PAN India.</p>
     </div>
 </div>
+<!-- <div class="container-div">
+    
+    <div class="white" style="height:350px;background-color:whitesmoke;border:1px solid black">
+            <div class="blue" style="height:50%;background-color:teal">
+                <h1>Thi is  sample prducts </h1>
+
+
+            </div>
+    </div>
+</div> -->
 
 </body>
 </html>
+<script  src="./Medicine.js"></script>
