@@ -18,6 +18,10 @@ body{
     color: grey;
     padding-left: 20px;
 }
+
+#append{
+    width: 400px;
+}
 #navbar>div>div>img{
     width: 20px;
     height: 20px;
@@ -96,7 +100,7 @@ form>input{
     margin-bottom: 20px;
 }
 
-#inpu{
+.inpu{
     display: block;
     width: 78.5%;
     border: none;
@@ -124,6 +128,9 @@ form>input{
 #submit{
     background-color: #24aeb1;
     color: white;
+    width: 78.5%;
+    border: none;
+    height: 48px;
 }
 
 #child2{
