@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
+    <title>Netmeds:- Payment</title>
     <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\netmeds.com\Netmeds-projectMasai\payment-page\payment.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -18,7 +19,7 @@
                 <h2>Payment Details</h2>
             </div>
             <div>
-                <img src="C:\Users\ADMIN\Desktop\netmeds.com\Netmeds-projectMasai\payment-page\box1.route.png" alt="">
+                <img src="payment-page\box1.route.png" alt="">
             </div>
         </div>
         <div id="boxmain">
@@ -30,7 +31,7 @@
                     <h4>UPI</h4>
                     <div>
                         <div>
-                            <div><img src="C:\Users\ADMIN\Desktop\netmeds.com\Netmeds-projectMasai\payment-page\Google_Pay_Logo.svg-removebg-preview.png"></div>
+                            <div><img src="Google_Pay_Logo.svg-removebg-preview.png"></div>
                             <div>Google pay</div>
                         </div>
                         <div>
@@ -189,7 +190,7 @@
                                     MRP Total
                                 </h4>
                             </div>
-                            <div class="mrp">1000</div>
+                            <div class="mrp" id="tp"></div>
                         </div>
                         <div>
                             <div>
@@ -197,7 +198,7 @@
                                     Additional Discount
                                 </h4>
                             </div>
-                            <div class="mrp">1000</div>
+                            <div class="mrp" id="ad">1000</div>
                         </div>
                         <div>
                             <div>
@@ -205,7 +206,7 @@
                                     Total Amount
                                 </h4>
                             </div>
-                            <div class="mrp">1000</div>
+                            <div class="mrp" id="ta">1000</div>
                         </div>
                         <div>
                             <div>
@@ -213,7 +214,7 @@
                                     Shipping/Delivery Charges
                                 </h4>
                             </div>
-                            <div class="mrp">1000</div>
+                            <div class="mrp" id="sdc">1000</div>
                         </div>
                     </div>
                     <div>
@@ -227,7 +228,7 @@
                                 Total Payable
                             </h3>
                         </div>
-                        <div id="mrp">1000</div>
+                        <div id="mrp" class="tpay">1000</div>
                     </div>
                     <div class="fle" id="flee">
                         <div>
@@ -235,7 +236,10 @@
                                 Total Savings
                             </h3>
                         </div>
-                        <div id="mrp">1000</div>
+                        <div id="mrp" class="tss">1000</div>
+                    </div>
+                    <div>
+                        <a href="paymentsucces.html"><button id="btn">Pay</button></a>
                     </div>
                 </div>
                 <div id="child9">
@@ -250,3 +254,34 @@
     </div>
 </body>
 </html>
+<script>
+
+    // document.querySelector("#tp").innerText = totalprice.toFixed(2);
+    //        // document.querySelector("#net").innerText = "Please apply coupon if any";
+    //         document.querySelector("#total").innerText = ("Rs. " + totalprice.toFixed(2));
+    //         document.querySelector("#total1").innerText = ("Rs. " + totalprice.toFixed(2));
+    //         let x = totalprice.toFixed(2);
+    //         coupon_button.addEventListener("click", function () {
+    //             let coupon = document.querySelector("#apply").value;
+    //             if (coupon == "masai30" || coupon == "MASAI30") {
+    //                 console.log(totalprice - (0.3 * totalprice));
+    //                 document.querySelector("#net").innerText = "30%";
+    //                 document.querySelector("#total").innerText = ("Rs. " + (totalprice - (0.3 * totalprice)).toFixed(2));
+    //                 document.querySelector("#total1").innerText = ("Rs." + (totalprice - (0.3 * totalprice)).toFixed(2));
+    //                 x = totalprice.toFixed(2) - (0.3 * totalprice.toFixed(2));
+    //             } else if (coupon !== "masai30" || coupon !== "MASAI30") {
+    //                 alert("Please enter valid Coupon Code.")
+    //             } else {
+    //                 document.querySelector("#total").innerText = (totalprice.toFixed(2));
+    //                 document.querySelector("#total1").innerText = ("Rs. " + totalprice.toFixed(2));
+    //                 x = totalprice.toFixed(2) - (0.3 * totalprice.toFixed(2));
+    //             }
+    //         })
+
+            var totalprice = document.getElementById("tp").textContent ="Rs."+ totalprice;    //total price
+    var add = document.getElementById("ad").textContent = ("Rs. " + (totalprice - (0.3 * totalprice)).toFixed(2));   //addtional discount
+    var taa = document.getElementById("ta").textContent = "Rs."+((totalprice)-(totalprice - (0.3 * totalprice))).toFixed(2);     //total amount
+    var sdcc = document.getElementById("sdc").textContent = "Rs."+0.1 * Number(totalprice);  // shipping charges
+    var tp = document.querySelector(".tpay").textContent = "Rs."+(((totalprice)-(totalprice - (0.3 * totalprice)))+(0.1 * Number(totalprice)));   //total payable
+    var sav = document.querySelector(".tss").textContent = "Rs."+ (totalprice - (0.3 * totalprice)).toFixed(2); // savings
+</script>
