@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
+    <title>Netmeds HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- CRAUSAL FOR FIRST SLIDER START -->
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- CRAUSAL FOR FIRST SLIDER END -->
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</head>
+<link rel="stylesheet" href="./styles/navbar.css">
+<link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="styles/footer.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+
+<!-- CRAUSAL FOR GROUP SLIDER START -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> -->
+<!-- GOOGLE FONT -->
+<style>
+    .carousel-cell {
+        width: 100%;
+        height: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-cell:before {
+        display: block;
+    }
+
+    .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+    }
+
+    .carousel-cell img {
+        display: block;
+        max-height: 100%;
+    }
+
+    li:not(.navbar li) {
+        margin-left: -40px;
+    }
+</style>
+<!-- STYLE TAG FOR FIRST SLIDER END -->
+
+
+
+<body>
+    <div id="navbar"> </div>
+    <!-- <div>
+        <div class="swiper mySwiper" id="deals">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="swiper mySwiper" id="brands">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div> -->
+    
+    <div class="carousel" data-flickity='{"autoPlay":true}'>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1664555976_Home_Bannerklkkk.jpg') ;">
+        </div>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1663166809_1680x320_copy.jpg') ;">
+        </div>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1664556289_Home_Bannerfdssds.jpg') ;">
+        </div>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1664979078_Home_Bannerlmkkkk.jpg') ;">
+        </div>
+    </div>
+
+    <div class="options">
+        <a href="product_pages/product_pages_html/product_page_Ayurvedic.html">
+            <div id="optiondiv">
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Wellnessnew.svg" alt="">
+                </div>
+                <div id="strdiv">
+                    <h3>Order Medicine</h3> <span id="strspan">Save upto 25% off</span>
+                </div>
+            </div>
+        </a>
+        <a href="product_pages/product_pages_html/product_page_beauty_personalcare.html">
+            <div id="optiondiv">
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/Beautynew.svg" alt="">
+                </div>
+                <div id="strdiv">
+
+                    <h3>Beauty</h3> <span id="strspan">Save upto 40% off</span>
+                </div>
+            </div>
+        </a>
+        <a href="product_pages/product_pages_html/product_page_BabyCare.html">
+            <div id="optiondiv">
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/icons/ordermedicinnew.svg" alt="">
+                </div>
+                <div id="strdiv">
+                    <h3>Wellness</h3> <span id="strspan">Save upto 15% off</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="payment">
+
+        <div class="some">
+            <h2>Payment Partner Offers</h2>
+            <h2 id="viewall">View All ></h2>
+            <!-- <h5 id="viewall">View All <h5> -->
+        </div>
+        <div class="paydiv">
+            <a href="">
+                <div id="payoptiondiv">
+                    <div>
+                        <img src="https://www.netmeds.com/images/cms/offers/1657030565_Simpl_Icon.png" alt="">
+                    </div>
+                    <div id="paystrdiv">
+                        <h5>Get up to Rs. 1000 Simple Cashback*!..</h5>
+                        <span id="paystrspan">
+                            <p>
+                                Get up to Rs. 1000 Simpl
+                                Cashback (5%) on your FIRST-EVER payment via Simpl for ANY purchases* of AN..
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div id="payoptiondiv">
+                    <div>
+                        <img src="https://www.netmeds.com/images/cms/offers/1654235738_Icon_256x256.png" alt="">
+                    </div>
+                    <div id="paystrdiv">
+
+                        <h5>Use Pay with Rewards, Get max. Rs. 1000 Cashback!..</h5>
+                        <span id="paystrspan">
+                            <p>
+                                Get assured
+                                cashback of max. Rs. 1000, when you pay using the “Pay with Rewards” payment option
+                                ..
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div id="payoptiondiv">
+                    <div>
+                        <img src="https://www.netmeds.com/images/cms/offers/1616682689_paytm.png" alt="">
+                    </div>
+                    <div id="paystrdiv">
+                        <h5>Get up to Rs. 300 Paytm Cashback!..</h5>
+                        <span id="paystrspan">
+                            <p>
+                                Get Paytm Cashback of max. Rs.
+                                300 on a minimum purchase of ANY products* worth Rs. 599, when you pa..
+                            </p>
+
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="no_3">
+        <div id="no_3div1">
+            <div id="no_3div1_1">
+                <h2>Previous Orders</h2>
+                <p>Your previously ordered products</p>
+                <button id="no_3orderbtn">
+                    View Orders <button id="no_3orderbtnspan">></button>
+                </button>
+            </div>
+            <div id="no_3div1_2">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/previous_orders.svg" alt="">
+            </div>
+        </div>
+        <div id="no_3div2">
+            <div id="no_3div2_1">
+                <h2>Beauty Products</h2>
+                <p>Save Upto 40% off</p>
+                <a href="product_pages/product_pages_html/product_page_BodyCare.html">
+                    <button id="no_3orderbtn2">
+                        Explore Beauty
+                    </button>
+                </a>
+            </div>
+            <div id="no_3div2_2">
+                <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/beauty_products.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 
+    <div class="trending">
+        <h2 class="trending_category">Trending Today</h2>
+        <button class="pre_btn">
+            <img src="https://img.icons8.com/ios-glyphs/2x/chevron-right.png" alt="">
+        </button>
+        <button class="nxt_btn">
+            <img src="https://img.icons8.com/ios-glyphs/2x/chevron-right.png" alt="">
+        </button>
+        <div class="trending_container">
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1663178001_Axiom_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665135184_Revital_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657045910_Mini-436-x-224-A.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1663139989_436x224_copy.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1660911310_Beato_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1656588409_Home_Page_Mini_Banner-436X224_w.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1662570473_Maxirich_Mini_banner_web_m45.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665137724_MOODS_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="category">
+        <div class="category_header">
+            <h2>Personal Care</h2>
+            <a href="product_pages/product_pages_html/product_page_Personal&HomeEssentials.html">
+                <p>View All ></p>
+            </a>
+        </div>
+        <br>
+        <div class="category_body">
+            <div>
+                <a href="product_pages/product_pages_html/product_page_BodyCare.html">
+                    <img src="images/p1.jpg" alt="">
+                </a>
+                <h3>Body Care</h3>
+            </div>
+            <div>
+                <a href="product_pages/product_pages_html/product_page_Mom&Baby.html">
+                    <img src="images/p5.jpg" alt="">
+                </a>
+                <h3>Mom & Baby</h3>
+            </div>
+            <div><a href="product_pages/product_pages_html/product_page_Surgical.html">
+                    <img src="images/p2.jpg" alt="">
+                </a>
+                <h3>Skin Treatment</h3>
+            </div>
+            <div><a href="product_pages/product_pages_html/product_page_beauty_personalcare.html">
+                    <img src="images/p3.jpg" alt="">
+                </a>
+                <h3>Face Wash & Cleanser</h3>
+            </div>
+            <div><a href="product_pages/product_pages_html/product_page_Bath&Shower.html">
+                    <img src="images/p4.jpg" alt="">
+                </a>
+                <h3>Shower Gels & Body Wash</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Tlist">
+        <h2 class="trending_category">Trending Today</h2>
+        <button class="pre-btn" title="btn"><img src="leftarrow.png" alt=""></button>
+        <button class="nxt-btn" title="btn"><img src="rightarrow.png" alt=""></button>
+
+        <div class="trending_container">
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1663178001_Axiom_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665135184_Revital_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657045910_Mini-436-x-224-A.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1663139989_436x224_copy.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1660911310_Beato_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1656588409_Home_Page_Mini_Banner-436X224_w.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1662570473_Maxirich_Mini_banner_web_m45.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665137724_MOODS_Mini_banner_web.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <a href="profile/profile.html"></a> -->
+    <div class="list limited_timelist">
+        <button class="pre-btn" title="btn"><img src="leftarrow.png" alt=""></button>
+        <button class="nxt-btn" title="btn"><img src="rightarrow.png" alt=""></button>
+
+        <h2>Limited Time Deals</h2>
+        <div class="limited_time">
+        </div>
+    </div>
+
+    <div class="membership">
+        <section class="membership_secA">
+            <div class="img_div">
+                <img src="images/star.svg" alt="">
+            </div>
+            <div class="desc_div">
+                <h2>Netmeds First Membership</h2>
+                <ul>
+                    <li>Get special discounts and offers on Netmeds services.</li>
+                    <li>Get 2.5% NMS Cash on pre-paid, Medicine orders of ANY value!</li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="membership_secB">
+            <div class="img_div">
+                <img src="https://www.netmeds.com/assets/version1665682643/gloryweb/images/icons/new-icons/flash.svg"
+                    alt="">
+                <span>
+                    Start at ₹299
+                </span>
+            </div>
+            <div class="btndiv">
+                <button class="explore_plans">Explore Plans</button>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="list brands_list">
+        <button class="pre-btn" title="btn"><img src="leftarrow.png" alt=""></button>
+        <button class="nxt-btn" title="btn"><img src="rightarrow.png" alt=""></button>
+
+        <h2>Brand Days - Inlife Upto 60% off</h2>
+        <div class="brands"></div>
+    </div>
+
+    <div class="category">
+        <div class="category_header">
+            <h2>Shop by Category</h2>
+            <a href="product_pages/product_pages_html/product_page_Ayurvedic.html">
+                <p>View All ></p>
+            </a>
+        </div>
+        <br>
+        <div class="category_body">
+            <div>
+                <img src="images/d1.jpg" alt="">
+                <h3>Dressing</h3>
+            </div>
+            <div>
+                <img src="images/d2.jpg" alt="">
+                <h3>Family Nutrition</h3>
+            </div>
+            <div>
+                <img src="images/d3.jpg" alt="">
+                <h3>Respiratory Supplies</h3>
+            </div>
+            <div>
+                <img src="images/d4.jpg" alt="">
+                <h3>Lotions & Creams</h3>
+            </div>
+            <div>
+                <img src="images/d5.jpg" alt="">
+                <h3>Homeopathy</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="Tlist">
+        <h2 class="trending_category">New On Netmeds</h2>
+        <button class="pre-btn" title="btn"><img src="images/img2.png" alt=""></button>
+        <button class="nxt-btn" title="btn"><img src="images/img1.png" alt=""></button>
+
+        <div class="trending_container">
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n1.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n2.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n3.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n4.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n5.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n6.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n7.jpg" alt="">
+                </div>
+            </div>
+            <div class="trending_card">
+                <div class="trending_images">
+                    <img src="images/n8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-div">
+    
+        <div class="white" style="height:490px;background-color:whitesmoke;">
+                <div class="blue" style="height:35%;background-color:#32aeb1;width: 100%;">
+                    <span> Shop by Category</span>   
+                    </h2>
+                    <small></small>
+                    <!-- <div style="margin: 5px 5px 5px 5px;"> -->
+                        <div id="box3"></div>
+                    <!-- </div> -->
+                    
+                </div>
+                
+        </div>
+    </div>
+   
+
+    <!-- HAMBURGUER MENU SCRIPT-->
+
+
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <!--  -->
+
+
+    <!-- FOOTER SECTION STARTED -->
+    <footer class="footer"></footer>
+    <!-- FOOTER SECTION ENDED -->
+
+    <!-- POP-UP TO PREVENT EXPLORE-PLANS -->
+    <div class="bg_pop_subscription_status" style="display: none;">
+        <div class="pop_subscription_status">
+            <!-- <img class="my_logo" src="images/me.jpeg" alt=""> -->
+            <h2 style="pointer-events: none;">Please Get a Subscribtion First.. !</h2>
+            <img class="pop_up_guide_2_img" src="images/pop_up_guide_2.jpeg" alt="">
+            <section>
+                <button class="letsgodown">Let's Go</button>
+                <button class="close">Close</button>
+            </section>
+        </div>
+    </div>
+    <style>
+        .bg_pop_subscription_status {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pop_subscription_status {
+            width: 500px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            color: lightgray;
+        }
+
+        /* .pop_login_status .my_logo {
+            height: 90px;
+            border-radius: 50%;
+        } */
+
+        .pop_subscription_status .pop_up_guide_2_img {
+            width: 300px;
+            height: 250px;
+            border-radius: 0;
+        }
+
+        .pop_subscription_status section {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            /* border: 1px solid red; */
+        }
+
+        .letsgodown {
+            width: 100px;
+            padding: 10px;
+            background-color: rgb(15, 222, 222);
+            color: white;
+            border-radius: 6px;
+            border: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        .letsgodown:hover {
+            background-color: transparent;
+            color: rgb(15, 222, 222);
+        }
+
+        .close {
+            width: 100px;
+            padding: 10px;
+            background-color: rgb(15, 222, 222);
+            color: white;
+            border-radius: 6px;
+            border: none;
+            display: block;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            background-color: transparent;
+            color: rgb(15, 222, 222);
+        }
+    </style>
+    <script>
+        // EXPLORE-PLANE :
+        document.querySelector(".explore_plans").addEventListener('click', () => {
+
+            document.querySelector(".bg_pop_subscription_status").style.display = "flex";
+        })
+
+        document.querySelector(".letsgodown").addEventListener("click", () => {
+
+            window.scroll({ top: 100000, behavior: "smooth" });
+        })
+
+        document.querySelector(".close").addEventListener("click", () => {
+            document.querySelector(".bg_pop_subscription_status ").style.display = "none";
+        })
+    </script>
+    <!-- POP-UP TO PREVENT EXPLORE-PLANS -->
+
+
+    <!-- POP-UP LOADING -->
+    <div class="loading_status" style="display: none;">
+
+        <img class="loading" src="images/loading.svg" alt="">
+
+    </div>
+    <style>
+        .loading_status {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+
+
+
+
+    <!-- POP-UP TO PREVENT LOGIN STATUS -->
+    <div class="bg_pop_login_status" style="display: none;">
+        <div class="pop_login_status">
+            <img class="my_logo" src="images/me.jpeg" alt="">
+            <h2 style="pointer-events: none;">Please SignIn / SignUp First.. !</h2>
+            <img class="pop_up_guide_img" src="images/pop_up_guide.jpeg" alt="">
+            <button class="gotit_signin">Got It</button>
+        </div>
+    </div>
+    <style>
+        .bg_pop_login_status {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pop_login_status {
+            width: 400px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            color: lightgray;
+        }
+
+        .pop_login_status .my_logo {
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        .pop_login_status .pop_up_guide_img {
+            width: 300px;
+            height: 150px;
+            border-radius: 0;
+        }
+
+        .gotit_signin {
+            width: 100px;
+            padding: 10px;
+            background-color: rgb(15, 222, 222);
+            color: white;
+            border-radius: 6px;
+            border: none;
+            display: block;
+            margin: 10px 38%;
+            cursor: pointer;
+        }
+
+        .gotit_signin:hover {
+            background-color: transparent;
+            color: rgb(15, 222, 222);
+        }
+    </style>
+    <script>
+        document.querySelector(".gotit_signin").addEventListener("click", () => {
+            document.querySelector(".bg_pop_login_status").style.display = "none";
+        })
+    </script>
+    <!-- POP-UP TO PREVENT LOGIN STATUS -->
+
+
+
+</body>
+
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+<!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script> -->
+<!-- <script src="scripts/cart.js"></script> -->
+
+<script>
+
+    // localStorage.setItem("Subscription_status", true);
+    const subscription_arr = JSON.parse(localStorage.getItem("subscribed")) || [];
+    function subscribeToNetmedsClone() {
+        event.preventDefault();
+        // alert("got")
+        let subs_obj = {
+            email: document.querySelector(".Inp_Subscribe_Email").value
+        }
+        console.log(subs_obj);
+        const check = subscription_arr.filter((e) => {
+            return e == subs_obj.email;
+        })
+        console.log(check.length);
+
+        if (check.length >= 1) {
+            document.querySelector(".loading_status").style.display = "flex";
+            setTimeout(() => {
+                // alert("you alreay subscribed!");
+                document.querySelector(".loading_status").style.display = "none";
+                document.querySelector(".errorsubs").style.display = "flex"
+                document.querySelector(".success").style.display = "none"
+            }, 2000)
+        } else {
+            document.querySelector(".loading_status").style.display = "flex";
+            setTimeout(() => {
+                document.querySelector(".loading_status").style.display = "none";
+                subscription_arr.push(subs_obj.email);
+                localStorage.setItem("subscribed", JSON.stringify(subscription_arr));
+                document.querySelector(".errorsubs").style.display = "none"
+                document.querySelector(".success").style.display = "flex"
+            }, 2000);
+
+        }
+        document.querySelector(".Inp_Subscribe_Email").value = ""
+    }
+</script>
+
+<script type="module" src="scripts/index.js"></script>
+
+
+<!-- SCRIPT TAG FOR GROUP SLIDER START -->
+<!-- <script>
+    $('.brands').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+</script> -->
+<!-- SCRIPT TAG FOR GROUP SLIDER END -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <input type="checkbox" id="check">
+<label for="check" class="ckeckbtn"></label>
+<i class="fas fa-bars ckeckbtn" aria-hidden="true"></i> -->
+
+
+
+
+
+
+<!-- 
+#brands {
+width: 100%;
+height: 400px;
+border: 2px solid black;
+padding-top: 100px;
+}
+
+.swiper-wrapper>div {
+width: 200px;
+border: 2px solid black;
+height: 300px;
+margin: 20px;
+display: block;
+padding-left: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+
+}
+
+.swiper-slide img {
+width: auto;
+height: 150px;
+display: block;
+margin: auto;
+cursor: pointer;
+}
+
+.swiper-slide button {
+width: 100%;
+display: block;
+margin: auto -5px;
+padding: 3px;
+position: relative;
+cursor: pointer;
+}
+
+.swiper-slide {
+text-align: left;
+font-size: 14px;
+background: #fff;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}  -->

@@ -1,0 +1,247 @@
+footer {
+    background-color: #fff;
+}
+
+/* SECTION 'A' CSS FOR FOOTER */
+.section_A {
+    width: auto;
+    display: flex;
+    padding: 30px;
+    border-bottom: 1.7px solid lightgray;
+}
+
+.section_A .footer_logo {
+    display: flex;
+    flex: 2.5;
+    /* border: 2px solid red; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.section_A .footer_logo img {
+    width: 200px;
+}
+
+.section_A .footer_description {
+    display: flex;
+    flex: 7.5;
+    color: gray;
+    /* border: 2px solid red; */
+
+}
+
+.section_A .footer_description p {
+    width: 700px;
+    pointer-events: none;
+    /* border: 2px solid black; */
+
+}
+
+@media(max-width: 900px) {
+    .section_A {
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .section_A .footer_description p {
+        width: 300px;
+        pointer-events: none;
+        /* border: 2px solid black; */
+
+    }
+}
+
+/* SECTION 'B' CSS FOR FOOTER */
+
+.section_B {
+    width: auto;
+    /* height: 200px; */
+    /* border: 2px solid red; */
+    border-bottom: 1.7px solid lightgray;
+
+}
+
+.section_B .footer_lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .section_B .footer_lists ul {
+          border: 1px solid teal;
+      } */
+
+.section_B .footer_lists h4:not(.subscribe h4) {
+    width: 100px;
+    margin-left: -30px;
+    /* border: 1px solid black; */
+}
+
+
+
+.section_B .footer_lists h4:hover {
+    text-decoration: underline;
+}
+
+.section_B .footer_lists ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.section_B .footer_lists ul li:hover {
+    color: rgb(6, 191, 191);
+}
+
+.subscribe {
+    width: 300px;
+    height: 400px;
+    margin: 20px 0;
+    /* border: 2px solid yellowgreen; */
+}
+
+.subscribe p {
+    font-size: 14px;
+    width: 250px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.subscribe form {
+    /* border: 1px dashed darkblue; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe form .Inp_Subscribe_Email {
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    opacity: 0.4;
+    color: black;
+    border: none;
+    border-bottom: 1.7px solid lightgray;
+}
+
+.subscribe form .Inp_Subscribe_Email:hover {
+    /* background-color: burlywood; */
+    /* color: black; */
+    opacity: 1;
+
+}
+
+.subscribe form .gobtn {
+    width: 25px;
+    height: 20px;
+    background-image: url('https://www.netmeds.com/assets/version1665682643/gloryweb/images/icons/send-icon.svg');
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.span_subscribe {
+    margin-top: 10px;
+}
+
+/* .span_subscribe .active {
+          display: block;
+      } */
+
+/* .span_subscribe .error,
+      .span_subscribe .success {
+          display: none;
+      } */
+
+.span_subscribe .errorsubs img,
+.span_subscribe .success img {
+    /* background-image: transparent; */
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+.span_subscribe .errorsubs {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    /* border: 2px solid black; */
+    background-color: rgb(245, 111, 111);
+    /* color: white; */
+    font-size: 15px;
+}
+
+.span_subscribe .success {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* border: 2px solid black; */
+    background-color: rgb(21, 206, 21);
+    /* color: white; */
+    font-size: 15px;
+}
+
+.subscribe .images {
+    margin: 20px 10px;
+}
+
+.subscribe .images img {
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    .section_B .footer_lists {
+        width: auto;
+        display: block;
+        margin: auto;
+        padding: -50px;
+    }
+}
+
+/* SECTION 'B' CSS FOR FOOTER */
+
+
+
+/* SECTION 'C' CSS FOR FOOTER */
+
+.section_C {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.section_C a {
+    text-decoration: none;
+}
+
+.section_C a li {
+    list-style: none;
+    color: gray;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.section_C li {
+    pointer-events: none;
+    list-style: none;
+    color: gray;
+}
+
+@media(max-width: 600px) {
+    .section_C {
+        width: auto;
+        display: block;
+        margin: auto;
+        gap: 20px;
+    }
+}

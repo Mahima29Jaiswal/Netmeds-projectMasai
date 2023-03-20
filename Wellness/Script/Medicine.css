@@ -1,0 +1,198 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+/* .container{
+    background-color: #f3f3f3;
+    /* margin: 0%;
+    padding: 0%;
+    margin-top: 0%; }*/
+
+ 
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: smaller;
+    color: #151b39 ;
+}
+a{
+    text-decoration: none;
+    color: #378b87 ;
+    font-size: smaller;
+}
+.press_t{
+    margin-left: 3%;
+
+}
+.description p{
+    color: #378b87 ;
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 10px;    
+    /* font-weight: bold; */
+}
+.description span{
+  color: #378b87 ;
+  font-size: smaller;
+    font-style: italic;
+    display: block;
+    margin-bottom: 3%;
+}
+.homeside{
+  margin-top: 2%;
+  margin-left: 3%;
+ 
+  margin-bottom: 2.5%;
+}
+.homeside a{
+  color: #518681;
+}
+/* .list_n{
+    width: 100%;
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 8px 0;
+    text-align: center;
+    display: flex;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;
+    background: #fff;
+    margin: 0;
+    -ms-flex-pack: justify ;
+}
+.inletter{
+    width: 100%;
+    border-top: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    padding: 8px 0px;
+    text-align: center;
+    overflow: hidden;
+} */
+#info {
+    margin-left: 8%;
+    margin-right: 5%;
+  }  
+table,
+td {
+  border-right: 1px groove grey;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: grey;
+}
+.in_letter{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+td:hover {
+    color: rgb(50, 174, 177);
+  }
+  
+  table {
+    width: 100%;
+    height: 40px;
+  }
+  .In_disable{
+    cursor: default;
+    color: #ccc;
+    pointer-events: none;
+  }
+  #Med {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .Medname {
+    font-size: 18px;
+    color: #242a46;
+    padding: 5px;
+  }
+  .h2,
+  .h3 {
+    font-size: 20px;
+    padding: 5px;
+  }
+  #all {
+    color: rgb(50, 174, 177);
+  }
+
+  /* 2nd last footer */
+  #containerG {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 5%;
+    height: 160px;
+    padding: 50px;
+  }
+  
+  .card2 p{
+    font-size: 16px;
+    text-align: left;
+    color: #9fa1a5;
+  }
+   /* 2nd last footer end */
+        /* last footer  */
+        #parent1{
+          padding: 70px;
+         
+      }
+     .class1{
+      display: flex; 
+      justify-content:space-between;
+      align-items: center;
+      gap: 50px;
+      width: 70%;
+
+     }
+   
+     #footer-parent2{
+       display: flex;
+       justify-content: space-between;
+     }
+     .tabe{
+      justify-content: space-between;
+     }
+     .tabe li{
+      margin: 15px;
+     }
+     .tabe li p{
+      line-break: auto;
+      width: 400px;
+     }
+     .tabe input{
+       border: none;
+      border-bottom: 1px solid grey;
+      padding: 8px 5px;
+     } 
+     #parent3{ 
+       display: flex;
+       justify-content: space-between;
+       font-weight: bold;
+       color: rgb(136, 139, 139);
+
+     }
+    .logoDiv{
+      width: 200px;
+ 
+      display: flex;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+    .logoDiv > img{
+      width: 100px;
+      margin-left: 3px;
+    }
+
