@@ -144,5 +144,55 @@ td:hover {
     color: #9fa1a5;
   }
    /* 2nd last footer end */
-        
+        /* last footer  */
+        #parent1{
+          padding: 70px;
+         
+      }
+     .class1{
+      display: flex; 
+      justify-content:space-between;
+      align-items: center;
+      gap: 50px;
+      width: 70%;
+
+     }
+   
+     #footer-parent2{
+       display: flex;
+       justify-content: space-between;
+     }
+     .tabe{
+      justify-content: space-between;
+     }
+     .tabe li{
+      margin: 15px;
+     }
+     .tabe li p{
+      line-break: auto;
+      width: 400px;
+     }
+     .tabe input{
+       border: none;
+      border-bottom: 1px solid grey;
+      padding: 8px 5px;
+     } 
+     #parent3{ 
+       display: flex;
+       justify-content: space-between;
+       font-weight: bold;
+       color: rgb(136, 139, 139);
+
+     }
+    .logoDiv{
+      width: 200px;
+ 
+      display: flex;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+    .logoDiv > img{
+      width: 100px;
+      margin-left: 3px;
+    }
 

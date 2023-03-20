@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Script/welln.css">
-    
-    <title>Wellness</title>
+    <link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
+    <title>Buy Wellness Products Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- CRAUSAL FOR FIRST SLIDER START -->
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- CRAUSAL FOR FIRST SLIDER END -->
     <style>
       /* Nav sec :start */
       * {
@@ -67,8 +72,9 @@
             background-color: #32aeb1;
             display: inline-block;
             font-family: LatoSemiBold;
-            margin-left: 10%;
+            margin-left: 2%;
             margin-top: 30px;
+            margin-right: 5%;
         }
         .dropdown-content a:hover {
             background-color: white;
@@ -269,7 +275,58 @@
             font-size: 14px;
         }
 /* category section end */
+        /* Footer-part */
+        #parent1{
+          padding: 70px;
+         background-color: white;
+      }
+     .class1{
+      display: flex; 
+      justify-content:space-between;
+      align-items: center;
+      gap: 50px;
+      width: 70%;
 
+     }
+   
+     #footer-parent2{
+       display: flex;
+       justify-content: space-between;
+     }
+     .tabe{
+      justify-content: space-between;
+     }
+     .tabe li{
+      margin: 15px;
+     }
+     .tabe li p{
+      line-break: auto;
+      width: 400px;
+     }
+     .tabe input{
+       border: none;
+      border-bottom: 1px solid grey;
+      padding: 8px 5px;
+     } 
+     #parent3{ 
+       display: flex;
+       justify-content: space-between;
+       font-weight: bold;
+       color: rgb(136, 139, 139);
+
+     }
+    .logoDiv{
+      width: 200px;
+ 
+      display: flex;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+    .logoDiv > img{
+      width: 100px;
+      margin-left: 3px;
+    }
+        /* Footer-part end */
     </style>
 </head>
 <body>   
@@ -300,12 +357,12 @@
     <div class="b1">
         <span id="numprod"></span>
         <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
-        <a href="cart.html"> Cart
+        <a href="cart-page.html"> Cart
     </div>
 
     <div class="b1">
         <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
-        <a href="signin.html"> SignIn/SignUp
+        <a href="register.html"> SignIn/SignUp
         </a>
     </div>
     </div>
@@ -320,12 +377,12 @@
                 src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
             <div class="dbox">
                 <div class="dropdown">
-                    <a href="med.html">
+                    <a href="Medicine.html">
                         <div class="med">Medicines</div>
                     </a>
                     <div class="dropdown-content">
-                        <a href="#">All Medicines</a>
-                        <a href="#">Previously ordered products</a>
+                        <a href="Medicine.html">All Medicines</a>
+                        <a href="Medicine.html">Previously ordered products</a>
                     </div>
                 </div>
             </div>
@@ -333,14 +390,14 @@
 
         <div>
            <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
-            <a href="category.html">
+            <a href="Welln.html">
             <p class="pmed">Wellness</p>
             </a>
         </div>
 
         <div>
             <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
-            <a href="labtest.html">
+            <a href="lab.html">
                 <a href="lab.html">
                     <p class="pmed">Lab Tests</p>
                 </a>
@@ -351,7 +408,7 @@
             <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
             <div class="dbox">
                 <div class="dropdown">
-                    <a href="category.html">
+                    <a href="productDetails.html">
                         <div class="med">Beauty</div>
                     </a>
                     <div class="dropdown-content">
@@ -405,14 +462,29 @@
      </nav>
   </div> 
     <!-- for slide sec -->
-  <div style="margin-left: 3%;margin-right: 3%;"> 
+ 
     
-      <div class="slide">
+    <div class="carousel" data-flickity='{"autoPlay":true}'>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1664555976_Home_Bannerklkkk.jpg') ;">
+        </div>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1663166809_1680x320_copy.jpg') ;">
+        </div>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1664556289_Home_Bannerfdssds.jpg') ;">
+        </div>
+        <div class="carousel-cell"
+            style="background-image: url('https://www.netmeds.com/images/cms/aw_rbslider/slides/1664979078_Home_Bannerlmkkkk.jpg') ;">
+        </div>
+    </div>
+      <!-- <div class="slide">
         <img src="img/BS1.jpg" class="slide-image">
   
-    </div>
+    </div> -->
     <!-- end for slide sec -->
   <!-- Best Seller -->
+  <div class="Bsell"> 
   <div>
     <h1>Best Seller</h1>
   </div>
@@ -511,7 +583,12 @@
 </div> 
  <!-- Footer -->
 
- <div id="containerG"> 
+ 
+ <!-- end -->
+
+ <!-- last Footer -->
+ <div id="parent1">
+    <div id="containerG"> 
     <div id="card">
       <img class="img" src="	https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg
       " alt="">
@@ -521,8 +598,68 @@
             reasonable prices to over 7 million happy customers – PAN India.</p>
     </div>
 </div>
- <!-- end -->
+    <hr>
+    <div id="footer-parent2">
+    <div class="tabe">
+       <ul type="none">
+        <li><h3>Company</h3></li>
+        <li>About Netmeds</li>
+        <li>Customers Speak</li>
+        <li>In the News</li>
+        <li>Terms and Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Contact</li>
+       </ul>
+    </div>
+    <div class="tabe">
+        <ul type="none">
+         <li><h3>Shopping</h3></li>
+         <li>Browse by Manufacturers</li>
+         <li>Health Articles</li>
+         <li>Offers / Coupons</li>
+         <li>FAQs</li>
+        </ul>
+     </div>
+     
+     <div class="tabe">
+        <ul type="none">
+         <li><h3>Social</h3></li>
+         <li>Patients Alike</li>
+         <li>Facebook</li>
+         <li>Twitter</li>
+         <li>LinkedIn</li>
+         <li>Youtube</li>
+         <li>Refer & Earn</li>
+        </ul>
+     </div>
+     <div class="tabe">
+        <ul type="none">
+         <li><h3>SUBSCRIBE TO OUR NEWSLETTER</h3></li>
+         <li><p>a free subscription to our health and fitness tip and stay tuned to our latest offers</p> </li>
+         <li><input type="email" placeholder="Enter Your email address"></li>
+          <div class="logoDiv">
+           
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="playstore">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="appstore">
 
+          </div>
+          
+        </ul>
+     </div>
+     </div>
+     <hr>
+     <div id="parent3">
+       
+                 <p>Medicine</p>
+                  <p>Wellness</p>
+                  <p>Lab Tests</p>
+                  <p>Beauty</p>
+                  <p>Copyright© 2023. All Rights Reserved.</p>
+      
+   </div>
+   </div> 
+   <!-- end -->
 </body>
 </html>
 <script  src="./Welln.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

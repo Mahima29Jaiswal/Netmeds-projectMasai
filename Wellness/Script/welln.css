@@ -42,7 +42,11 @@ body{
   margin-right: 7%; */
   display: flex;
   justify-content: space-around;
+ row-gap: 2%;
 
+}
+.Bsell{
+  margin-left: 5%;
 }
 /*body {
   margin: 100px 0px;
@@ -80,20 +84,22 @@ body{
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   background-color: #f3f3f3;
+  margin-bottom: 5%;
+  
 }
 #container2 > div {
   width: 100%;
   height: 280px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   text-align: center;
   margin-top: 20px;
-  
+  background-color: #f3f3f3;
 }
 #b5-img {
   /* margin: 45px 75px 25px; */
   position: relative;
-  /* left: 65px; */
+  width: 50%;
   margin: 50px 0px 30px;
   
 }
@@ -159,7 +165,7 @@ margin-top: 2%;
   background-color: white;
   /* text-align: left; */
   align-items: left;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
@@ -223,7 +229,7 @@ p {
   text-align: center;
   /*color: rgb(83, 83, 83);*/
 }
-.txt {
+/* .txt {
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(110, 106, 106);
@@ -240,7 +246,7 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(75, 74, 74);
   font-weight: 400;
-}
+} */
 #today {
   margin: 40px 10px;
   line-height: 25px;
@@ -317,7 +323,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   background-color: white;
-  margin-top: 5%;
+  /* margin-top: 2%; */
   height: 160px;
   padding: 50px;
 }
@@ -326,4 +332,30 @@ p {
   font-size: 16px;
   text-align: left;
   color: #9fa1a5;
+}
+/* Slideing  */
+.carousel-cell {
+  width: 100%;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-cell:before {
+  display: block;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  max-height: 100%;
+}
+
+li:not(.navbar li) {
+  margin-left: -40px;
 }

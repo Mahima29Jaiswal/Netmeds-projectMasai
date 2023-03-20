@@ -92,7 +92,7 @@ var data1=[
 var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
 displayitems(data1)
 function displayitems(data1){
-    document.querySelector("#box2").textContent=""
+    document.querySelector("#box2").textContent="";
 
 data1.map(function(elem){
     var div=document.createElement("div")
@@ -125,13 +125,22 @@ data1.map(function(elem){
         btn.textContent="Add To Cart"
         btn.addEventListener("click",function(){
             addcart(elem)
-            window.location.href="cart1.html";
+            window.location.href="cart-page.html";
+            // if(addcart(elem.des) === true){
+            //     alert("Product added");
+            //     cart.push(elem);
+            //     localStorage.setItem("cartdata",JSON.stringify(cart))
+            // }else{
+            //     alert("Product Already Exist");
+            // }
+            // location.reload();
         })
 
         div.append(img,des,smalltxt,bprice,price,mrp,btn)
         document.querySelector("#box2").append(div);
     })
 }
+ //displayitems(data1);
       function addcart(elem){
       console.log(elem)
       cart.push(elem)
@@ -210,7 +219,7 @@ data1.map(function(elem){
             btn.textContent="Add To Cart"
             btn.addEventListener("click",function(){
                 addcart(element)
-                window.location.href="cart1.html";
+                window.location.href="cart-page.html";
             })
     
           function addcart(element){
@@ -299,7 +308,7 @@ data1.map(function(elem){
             btn.textContent="Add To Cart"
             btn.addEventListener("click",function(){
                 addcart(element)
-                window.location.href="cart1.html";
+                window.location.href="cart-page.html";
             })
     
           function addcart(element){
@@ -388,7 +397,7 @@ data1.map(function(elem){
         btn.textContent="Add To Cart"
         btn.addEventListener("click",function(){
             addcart(element)
-            window.location.href="cart1.html";
+            window.location.href="cart-page.html";
             })
     
           function addcart(element){
