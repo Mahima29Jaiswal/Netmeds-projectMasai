@@ -215,6 +215,9 @@
       button {
         cursor: pointer;
       }
+      #change{
+        margin-left: 20px;
+      }
     </style>
   </head>
 
@@ -239,7 +242,7 @@
       <div>
         <img src="C:\Users\acer\Desktop\masai project unit 4\order page.png" alt="img">
       </div>
-      <!-- <div>
+      
         <div>
           <span
             ><i
@@ -313,7 +316,7 @@
             </p>
           </div>
           <div>
-            <h3 style="color: red; text-align: right">CHANGE</h3>
+           <!-- <button id="change"> <h3 style="color: red; text-align: right">CHANGE</h3></button> -->
           </div>
         </div>
         <div id="customer">
@@ -383,10 +386,10 @@
   // let cartdata = JSON.parse(localStorage.getItem("cart-page"));
   
   var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
-  display(cartdata);
+  display(carttotal);
 
-  function display(cartdata) {
-    cartdata.forEach(function (elem) {
+  function display(carttotal) {
+    carttotal.forEach(function (elem) {
       let mdiv = document.createElement("div");
       let img = document.createElement("img");
       img.setAttribute("src", elem.image_url);
@@ -405,5 +408,6 @@
   //   alert("Payment Successful ");
   //    window.location.href = "testing.html";
   // }
-  // document.querySelector("#total").innerText = "RS " + carttotal;
+   document.querySelector("#total").innerText = "RS " + carttotal;
+   
 </script>
