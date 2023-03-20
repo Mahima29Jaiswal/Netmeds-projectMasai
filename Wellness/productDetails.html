@@ -193,6 +193,9 @@
             margin-top: 100px
         }
 
+        .strike{
+            text-decoration-line: line-through;
+        }
         .row>div {
             height: 50px;
             flex-basis: 180px;
@@ -1227,6 +1230,7 @@
             price.style.fontSize = "20px"
 
             let mrp = document.createElement("p");
+            mrp.setAttribute("class", "strike");
             mrp.innerText = element.strikedoffprice;
 
             let addToCart = document.createElement("button");
