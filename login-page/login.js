@@ -23,10 +23,10 @@ document.querySelector("form").addEventListener("submit",submitt);
       }
     })
 
-    if(count > 0){
-      window.location.href = "index.html";
-    }
-    else{
+    // if(count > 0){
+    //   window.location.href = "./login-page/index.html";
+    // }
+    if(count==0){
       alert("wrong details")
     }
   }

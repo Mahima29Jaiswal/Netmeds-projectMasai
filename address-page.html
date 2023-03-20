@@ -353,7 +353,7 @@
           <div id="lower">
             <div></div>
             <div>
-             <a href="payment.html"> <button
+             <a href="/Netmeds-projectMasai/payment-page/payment.html"> <button
               
                 id="paybtn"
                 style="
@@ -385,11 +385,11 @@
   let carttotal = JSON.parse(localStorage.getItem("order-page"));
   // let cartdata = JSON.parse(localStorage.getItem("cart-page"));
   
-  var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
-  display(carttotal);
+  var cartdata=JSON.parse(localStorage.getItem("cartdata"))||[];
+  display(cartdata);
 
-  function display(carttotal) {
-    carttotal.forEach(function (elem) {
+  function display(cartdata) {
+    cartdata.forEach(function (elem) {
       let mdiv = document.createElement("div");
       let img = document.createElement("img");
       img.setAttribute("src", elem.image_url);
@@ -405,8 +405,8 @@
   }
   // document.getElementById("paybtn").addEventListener("click", myPay);
   // function myPay() {
-  //   alert("Payment Successful ");
-  //    window.location.href = "testing.html";
+  //    alert("Payment Successful ");
+  //   // window.location.href = "payment-page\payment.html";
   // }
    document.querySelector("#total").innerText = "RS " + carttotal;
    

@@ -365,7 +365,7 @@
     <body>
          <div id="container">
             <div id="mainbox">
-                <a href="index.html">
+                <a href="/Netmeds-projectMasai/index.html">
                     <div class="mainImg">
                         <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
                     </div>
@@ -387,11 +387,11 @@
                         <span id="numprod"></span>
                         <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
 
-                        <a href="cart.html"> Cart
+                        <a href="/Netmeds-projectMasai/cart-page.html"> Cart
                     </div>
                     <div class="b1">
                         <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
-                        <a href="login.html"> SignIn/SignUp
+                        <a href="/Netmeds-projectMasai/login-page/login.html"> SignIn/SignUp
 
                         </a>
                     </div>
@@ -450,7 +450,7 @@
                         </div>
                         <div id="right">
 
-                            <a href="productDetails.html">
+                            <a href="/Netmeds-projectMasai/Wellness/productDetails.html">
 
                                 <h2 style="color: black;">
                                     Add More Items</h2>
@@ -504,7 +504,7 @@
                             <h8>Total Amount</h8><br>
                             <h4 id="total1"></h4>
                         </div>
-                        <a href="address-page.html"><button id="PRO">PROCEED</button></a>
+                        <a href="/Netmeds-projectMasai/address-page.html"><button id="PRO">PROCEED</button></a>
                     </div>
     
                 </div>
@@ -522,29 +522,29 @@
         let orderLS = JSON.parse(localStorage.getItem("order-page")) || [];
         let totalprice = 0;
     
-        function displayProducts(data1) {
+        function displayProducts(productData) {
             productCont.innerHTML = "";
             totalprice = 0;
-            data1.forEach(function (element) {
+            productData.forEach(function (element,index) {
                 totalprice += Number(element.price.trim().split(" ")[3]);
                 let product = document.createElement("div");
                  product.setAttribute("class","product2");
                 let img = document.createElement("img");
-                img.src = element.img;
+                img.src = element.image_url;
     
                 let name = document.createElement("h3");
-                name.textContent = element.des;
+                name.textContent = element.name;
     
                 let category = document.createElement("p");
-                category.innerText = element.smalltxt;
+                category.innerText = element.category;
     
                 let price = document.createElement("p");
-                let rs = element.price;
-                price.innerText = price;
+                let rs = element.rs;
+                price.innerText = rs;
                 price.style.color = "red"
     
                 let mrp = document.createElement("p");
-                mrp.innerText = element.mrp;
+                mrp.innerText = element.strikedoffprice;
     
                 let DeleteToCart = document.createElement("button");
                 DeleteToCart.innerText = "DELETE";
@@ -554,7 +554,7 @@
                 DeleteToCart.style.height = "50px";
                 DeleteToCart.style.color = "white";
                 DeleteToCart.addEventListener("click", function () {
-                    Delete(element.name);
+                    Delete(index);
                 })
     
                 product.append(img, name, category, price, mrp, DeleteToCart)
@@ -591,11 +591,13 @@
     
     
         displayProducts(cartLS);
-        function Delete(id) {
-            let deleted = cartLS.filter(function (el) {
-                return el.name != id;
-            })
-            cartLS = deleted;
+        function Delete(index) {
+            // let deleted = cartLS.filter(function (el) {
+            //     return el.name != id;
+            // })
+            // cartLS = deleted;
+             
+            cartLS.splice(index,1);
             localStorage.setItem("cartdata", JSON.stringify(cartLS));
             displayProducts(cartLS);
             console.log(cartLS);

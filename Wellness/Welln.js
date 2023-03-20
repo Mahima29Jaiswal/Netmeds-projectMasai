@@ -124,27 +124,38 @@ data1.map(function(elem){
     btn.setAttribute("class","btn")
         btn.textContent="Add To Cart"
         btn.addEventListener("click",function(){
-            addcart(elem)
-            window.location.href="cart-page.html";
-            // if(addcart(elem.des) === true){
-            //     alert("Product added");
-            //     cart.push(elem);
-            //     localStorage.setItem("cartdata",JSON.stringify(cart))
-            // }else{
-            //     alert("Product Already Exist");
-            // }
-            // location.reload();
+            // addcart(elem)
+           
+            // window.location.href="/Wellness-project";
+           
+            if(addcart(elem.des) === true){
+                alert("Product added");
+                cart.push(elem);
+                localStorage.setItem("cartdata",JSON.stringify(cart))
+            }else{
+                alert("Product Already Exist");
+            }
+            location.reload();
         })
 
         div.append(img,des,smalltxt,bprice,price,mrp,btn)
         document.querySelector("#box2").append(div);
     })
 }
- //displayitems(data1);
-      function addcart(elem){
-      console.log(elem)
-      cart.push(elem)
-      localStorage.setItem("cartdata",JSON.stringify(cart))
+ displayitems(data1);
+    //   function addcart(elem){
+    //   console.log(elem)
+    //   cart.push(elem)
+    //   localStorage.setItem("cartdata",JSON.stringify(cart))
+    //   }
+
+    function addcart(id) {
+        for (let i = 0; i < cart.length; i++) {
+            if (cart[i].name === id) {
+                return false;
+            }
+        }
+        return true;
     }
 
     // ----------------------------Exclusive Deals on Your Daily Supplement end------------------------------------
@@ -218,22 +229,39 @@ data1.map(function(elem){
         btn.setAttribute("class","btn")
             btn.textContent="Add To Cart"
             btn.addEventListener("click",function(){
-                addcart(element)
-                window.location.href="cart-page.html";
+                // addcart(element)
+                // window.location.href="cart-page.html";
+                if(addcart(elem.des) === true){
+                    alert("Product added");
+                    cart.push(elem);
+                    localStorage.setItem("cartdata",JSON.stringify(cart))
+                }else{
+                    alert("Product Already Exist");
+                }
+                location.reload();
             })
     
-          function addcart(element){
-          console.log(element)
-          cart.push(element)
-          localStorage.setItem("cartdata",JSON.stringify(cart))
-        }
+        //   function addcart(element){
+        //   console.log(element)
+        //   cart.push(element)
+        //   localStorage.setItem("cartdata",JSON.stringify(cart))
+        
     
         div1.append(img1,des1,smalltxt1,price1,mrp1,btn)
         document.querySelector("#box3").append(div1)
        
     })
     }
+    displayitems(data1);
 
+    function addcart(id) {
+        for (let i = 0; i < cart.length; i++) {
+            if (cart[i].name === id) {
+                return false;
+            }
+        }
+        return true;
+    }
     //----------------------------end---------------------------------
     //-------------------------------Super Savers for Your Family Nutrtion---------------------------------
 

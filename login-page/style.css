@@ -131,6 +131,12 @@ form>input{
     width: 78.5%;
     border: none;
     height: 48px;
+    font-size: 18px;
+}
+
+#submit>a{
+    text-decoration: none;
+    color: white;
 }
 
 #child2{

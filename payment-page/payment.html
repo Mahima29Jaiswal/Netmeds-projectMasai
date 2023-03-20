@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.netmeds.com/assets/global/apple-touch-icon-48x48.png" />
     <title>Netmeds:- Payment</title>
-    <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\netmeds.com\Netmeds-projectMasai\payment-page\payment.css">
+    <link rel="stylesheet" href="payment.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
@@ -278,10 +278,11 @@
     //             }
     //         })
 
-            var totalprice = document.getElementById("tp").textContent ="Rs."+ totalprice;    //total price
-    var add = document.getElementById("ad").textContent = ("Rs. " + (totalprice - (0.3 * totalprice)).toFixed(2));   //addtional discount
-    var taa = document.getElementById("ta").textContent = "Rs."+((totalprice)-(totalprice - (0.3 * totalprice))).toFixed(2);     //total amount
-    var sdcc = document.getElementById("sdc").textContent = "Rs."+0.1 * Number(totalprice);  // shipping charges
-    var tp = document.querySelector(".tpay").textContent = "Rs."+(((totalprice)-(totalprice - (0.3 * totalprice)))+(0.1 * Number(totalprice)));   //total payable
-    var sav = document.querySelector(".tss").textContent = "Rs."+ (totalprice - (0.3 * totalprice)).toFixed(2); // savings
+    let carttotal = JSON.parse(localStorage.getItem("order-page"));
+    var totalprice = document.getElementById("tp").textContent ="Rs."+ (carttotal);    //total price
+    var add = document.getElementById("ad").textContent = "Rs. " + Number((carttotal) - (0.7 * (carttotal))).toFixed(2);   //addtional discount
+    var taa = document.getElementById("ta").textContent = "Rs."+ Number((carttotal) - (0.3 * (carttotal))).toFixed(2);     //total amount
+    var sdcc = document.getElementById("sdc").textContent = "Rs."+0.1 * (Number(carttotal));  // shipping charges
+    var tp = document.querySelector(".tpay").textContent = "Rs."+(((Number(carttotal))-(Number(carttotal) - (0.3 * Number(carttotal))))+(0.1 * Number(Number(carttotal))));   //total payable
+    var sav = document.querySelector(".tss").textContent = "Rs."+ (Number(carttotal) - (0.3 * Number(carttotal))).toFixed(2); // savings
 </script>

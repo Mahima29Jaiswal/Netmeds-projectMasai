@@ -329,7 +329,7 @@
 <body>
     <div id="mainbox">
 
-        <a href="index.html">
+        <a href="/Netmeds-projectMasai/index.html">
             <div class="mainImg">
                 <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg">
             </div>
@@ -355,14 +355,14 @@
             <div class="b1">
                 <span id="numprod"></span>
                 <img class="icon" src="	https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg"> &nbsp;
-                <a href="cart-page.html"> Cart
+                <a href="/Netmeds-projectMasai/cart-page.html"> Cart
 
             </div>
 
 
             <div class="b1">
                 <img class="icon" src="https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg">&nbsp;
-                <a href="registration.html"> SignIn/SignUp
+                <a href="/Netmeds-projectMasai/login-page/register.html"> SignIn/SignUp
                 </a>
             </div>
         </div>
@@ -377,7 +377,7 @@
                     src="https://www.netmeds.com/assets/version1630028519/gloryweb/images/icons/medicine.svg">
                 <div class="dbox">
                     <div class="dropdown">
-                        <a href="Medicine.html">
+                        <a href="/Netmeds-projectMasai/Wellness/Medicine.html">
                             <div class="med">Medicines</div>
                         </a>
                         <div class="dropdown-content">
@@ -391,7 +391,7 @@
             <div>
 
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg">
-                <a href="Welln.html">
+                <a href="/Netmeds-projectMasai/Wellness/Welln.html">
                     <p class="pmed">Wellness</p>
                 </a>
             </div>
@@ -399,7 +399,7 @@
             <div>
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg">
                 <a href="lab.html">
-                    <a href="lab.html">
+                    <a href="/Netmeds-projectMasai/Wellness/lab.html">
                         <p class="pmed">Lab Tests</p>
                     </a>
                 </a>
@@ -409,7 +409,7 @@
                 <img id="rimg" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg">
                 <div class="dbox">
                     <div class="dropdown">
-                        <a href="productDetails.html">
+                        <a href="/Netmeds-projectMasai/Wellness/productDetails.html">
                             <div class="med">Beauty</div>
                         </a>
                         <div class="dropdown-content">
@@ -1206,7 +1206,7 @@
 
     let filter = document.getElementById("filter");
 
-    let cartLS = JSON.parse(localStorage.getItem("cart-page")) || [];
+    let cartLS = JSON.parse(localStorage.getItem("cartdata")) || [];
 
     function displayProducts(productData) {
         productCont.innerHTML = "";
@@ -1239,7 +1239,7 @@
                 if (addToCartFunc(element.name) === true) {
                     alert("Product Added");
                     cartLS.push(element);
-                    localStorage.setItem("cart-page", JSON.stringify(cartLS));
+                    localStorage.setItem("cartdata", JSON.stringify(cartLS));
                 } else {
                     alert("Product Already Exist");
                 }
@@ -1278,12 +1278,12 @@
 
 
 
-    let cartData = JSON.parse(localStorage.getItem("cart-page"))
+    let cartData = JSON.parse(localStorage.getItem("cartdata"))
 
 
 
     let txt = document.getElementById('numprod')
-    let cart = JSON.parse(localStorage.getItem('cart-page'))
+    let cart = JSON.parse(localStorage.getItem('cartdata'))
 
     let spantext = document.createElement('span')
     var len = cart.length;

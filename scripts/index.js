@@ -137,7 +137,8 @@ function cartDetail() {
         document.querySelector(".withlogin").innerText = `${user_name}`
         document.querySelector(".withlogin").style.display = "block"
         document.querySelector(".withlogin").addEventListener("click", () => {
-            window.location.href = "register.html";
+            // window.location.href = "login-page/register.html";
+            window.location.href = "login-page/login.html";
             // document.querySelector(".profile_links").location.href = "./profile/profile.html";
         })
     } else {
@@ -146,7 +147,7 @@ function cartDetail() {
         document.querySelector(".withlogin").style.display = "none"
         document.querySelector(".withoutlogin").style.display = "block";
         document.querySelector(".withoutlogin").addEventListener("click", () => {
-            window.location.href = "login.html";
+            window.location.href = "login-page/register.html";
         })
     }
 }
@@ -335,7 +336,7 @@ async function getsugg(dataurl) {
 function select(e) {
     console.log((" hello", e));
     localStorage.setItem("clicked", JSON.stringify(e));
-    window.location.href = "./Product_Description_Page/productDetails.html";
+    window.location.href = "Wellness/productDetails.html";
 }
 
 // let nonsenseInp = document.querySelector("#inp");
@@ -361,7 +362,7 @@ document.querySelector("#inp").addEventListener("keypress", (e) => {
         // alert("hello")
         localStorage.setItem("search", searhTerm);
         document.querySelector("#inp").value = ""
-        window.location.href = "productDetails.html";
+        window.location.href = "Wellness/productDetails.html";
     }
     // console.log("hhheelloooo");
 })
