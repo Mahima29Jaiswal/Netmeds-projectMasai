@@ -24,7 +24,7 @@ document.querySelector("form").addEventListener("submit",submitt);
     })
 
     if(count > 0){
-      window.location.href = "https://web.whatsapp.com/";
+      window.location.href = "index.html";
     }
     else{
       alert("wrong details")
