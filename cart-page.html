@@ -19,7 +19,7 @@
     
             #products {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                /* grid-template-columns: repeat(3, 1fr); */
                 grid-template-rows: repeat(auto, 1fr);
                 gap: 15px;
                 justify-content: center;
@@ -349,12 +349,14 @@
             .carousel-cell:before {
                 display: block;
             }
-             /* .product2 {
+              .product2 {
                 /* border: 1px solid red; */
-                /* display: flex; */
-                /* display :grid; */
-                 /* grid-template-rows:1fr,1fr 
-             } */
+                 display: flex; 
+                 flex-direction: row;
+                 align-items: center;
+          
+             } 
+            
      
             
         </style>
