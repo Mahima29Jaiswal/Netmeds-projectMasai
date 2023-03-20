@@ -110,8 +110,8 @@ function showlimited_time(data) {
 // cartdataCount = cartArr.length;
 // console.log(cartArr);
 const cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
-const user_name = localStorage.getItem("register.html");
-const user_login_status = localStorage.getItem("login.html");
+const user_name = localStorage.getItem("register-data");
+const user_login_status = localStorage.getItem("register-data");
 console.log(user_name, user_login_status);
 function addtocart(e) {
     // alert("adding")
@@ -137,7 +137,7 @@ function cartDetail() {
         document.querySelector(".withlogin").innerText = `${user_name}`
         document.querySelector(".withlogin").style.display = "block"
         document.querySelector(".withlogin").addEventListener("click", () => {
-            window.location.href = "profile/profile.html";
+            window.location.href = "register.html";
             // document.querySelector(".profile_links").location.href = "./profile/profile.html";
         })
     } else {
