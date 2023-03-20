@@ -110,8 +110,8 @@ function showlimited_time(data) {
 // cartdataCount = cartArr.length;
 // console.log(cartArr);
 const cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
-const user_name = localStorage.getItem("user_fname");
-const user_login_status = localStorage.getItem("login_status");
+const user_name = localStorage.getItem("register.html");
+const user_login_status = localStorage.getItem("login.html");
 console.log(user_name, user_login_status);
 function addtocart(e) {
     // alert("adding")
@@ -361,7 +361,7 @@ document.querySelector("#inp").addEventListener("keypress", (e) => {
         // alert("hello")
         localStorage.setItem("search", searhTerm);
         document.querySelector("#inp").value = ""
-        window.location.href = "./SearchedPage/search.html";
+        window.location.href = "productDetails.html";
     }
     // console.log("hhheelloooo");
 })
