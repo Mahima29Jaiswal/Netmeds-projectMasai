@@ -592,11 +592,6 @@
     
         displayProducts(cartLS);
         function Delete(index) {
-            // let deleted = cartLS.filter(function (el) {
-            //     return el.name != id;
-            // })
-            // cartLS = deleted;
-             
             cartLS.splice(index,1);
             localStorage.setItem("cartdata", JSON.stringify(cartLS));
             displayProducts(cartLS);

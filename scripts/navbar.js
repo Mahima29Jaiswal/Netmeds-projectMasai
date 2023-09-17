@@ -1,7 +1,7 @@
 function navbar() {
 
     return `<div class="header">
-            <div id="left"><a href="../../index.html">
+            <div id="left"><a href="../index.html">
                 <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg"
                     alt=""></a>
             </div> 
@@ -42,7 +42,7 @@ function navbar() {
                 <div class="mid_nav_ul">
                 <ul class="mid_nav_ul_a">
                 <il id="medicine_list">
-                <a href="Wellness/Medicine.html">
+                <a href="Medicine.html">
 
                         <div><img id="logos"
                         src="https://www.netmeds.com/assets/version1663621997/gloryweb/images/icons/medicine.svg"
@@ -53,12 +53,12 @@ function navbar() {
                             
                             </a>
                             <ul id="medicine_dd_list">
-                            <li><a href="Wellness/Medicine.html">All Medicines</a></li>
-                        <li><a href="Wellness/Medicine.html">Previously Ordered Products</a></li>
+                            <li><a href="Medicine.html">All Medicines</a></li>
+                        <li><a href="Medicine.html">Previously Ordered Products</a></li>
                         </ul>
                 </il>
 
-                <il id="wellness_list"><a href="Wellness/Welln.html">
+                <il id="wellness_list"><a href="Welln.html">
                         <div><img id="logos" src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg"
                                 alt=""></div>
                         <div id="_12">Wellness</div>
@@ -66,7 +66,7 @@ function navbar() {
                     </a></il>                
                 </ul>
                 <ul class="mid_nav_ul_b">
-                <il id="labtest_list"><a href="Wellness/lab.html">
+                <il id="labtest_list"><a href="lab.html">
                     <div><img id="logos"
                             src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt="">
                     </div>
@@ -74,7 +74,7 @@ function navbar() {
                 </a></il>
 
 
-            <il id="beauty_list"><a href="Wellness/productDetails.html">
+            <il id="beauty_list"><a href="productDetails.html">
                     <div><img id="logos" src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg"
                             alt="">
                     </div>
@@ -96,7 +96,7 @@ function navbar() {
             </il>                
                 </ul>
                 <ul class="mid_nav_ul_c">
-                <il id="healthcorner_list"><a href="Wellness/productDetails.html">
+                <il id="healthcorner_list"><a href="productDetails.html">
                         <div><img id="logos"
                         src="https://www.netmeds.com/assets/version1663621997/gloryweb/images/icons/health-library.svg"
                                 alt=""></div>
@@ -129,12 +129,12 @@ function navbar() {
             
                 <div class="productpages_list">
                 <ul class="productpages_list_a">
-                <li><a href="Wellness/productDetails.html">COVID Essentials</a></li>
-                <li><a href=" Wellness/productDetails.html">Diabetes</a></li>
-                <li><a href="Wellness/productDetails.html ">Eyewear</a></li>
-                <li><a href=" Wellness/productDetails.html">Ayush</a></li>
-                <li><a href="Wellness/productDetails.html">Ayurvedic</a></li>
-                <li><a href=" Wellness/productDetails.html">Homeopathy</a></li>
+                <li><a href="productDetails.html">COVID Essentials</a></li>
+                <li><a href=" productDetails.html">Diabetes</a></li>
+                <li><a href="productDetails.html ">Eyewear</a></li>
+                <li><a href=" productDetails.html">Ayush</a></li>
+                <li><a href="productDetails.html">Ayurvedic</a></li>
+                <li><a href=" productDetails.html">Homeopathy</a></li>
                 </ul>
                 <ul class="productpages_list_b">
                 <li><a href="../../product_pages/product_pages_html/product_page_Fitness.html">Fitness</a></li>

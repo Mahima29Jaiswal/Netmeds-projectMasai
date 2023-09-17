@@ -92,7 +92,7 @@ var data1=[
 var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
 displayitems(data1)
 function displayitems(data1){
-    document.querySelector("#box2").textContent="";
+document.querySelector("#box2").textContent="";
 
 data1.map(function(elem){
     var div=document.createElement("div")

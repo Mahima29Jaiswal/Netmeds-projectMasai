@@ -104,11 +104,6 @@ function showlimited_time(data) {
     })
 }
 
-// const countitemsaddedincart = 0;
-// const c = localStorage.getItem("countcartitrms");
-// console.log("itemsAdded:", cartArr.length);
-// cartdataCount = cartArr.length;
-// console.log(cartArr);
 const cartArr = JSON.parse(localStorage.getItem("cartdata")) || [];
 const user_name = localStorage.getItem("register-data");
 const user_login_status = localStorage.getItem("register-data");
@@ -138,7 +133,7 @@ function cartDetail() {
         document.querySelector(".withlogin").style.display = "block"
         document.querySelector(".withlogin").addEventListener("click", () => {
             // window.location.href = "login-page/register.html";
-            window.location.href = "login-page/login.html";
+            window.location.href = "login.html";
             // document.querySelector(".profile_links").location.href = "./profile/profile.html";
         })
     } else {
@@ -147,78 +142,12 @@ function cartDetail() {
         document.querySelector(".withlogin").style.display = "none"
         document.querySelector(".withoutlogin").style.display = "block";
         document.querySelector(".withoutlogin").addEventListener("click", () => {
-            window.location.href = "login-page/register.html";
+            window.location.href = "register.html";
         })
     }
 }
 
 
-// checkLoginStatus();
-
-// function checkLoginStatus() {
-//     return user_login_status;
-
-//     // if (user_login_status === true) {
-//     //     console.log("decl:", user_login_status);
-
-//     // }
-// }
-
-
-// const url = "https://mr-raaz.github.io/NetmedsClone_data/landingPage_data.json";
-
-// getdata(url);
-
-// async function getdata(url) {
-//     let res = await fetch(url);
-//     let data = await res.json();
-
-//     showbrands(data.Brand_days);
-// }
-
-// function showbrands(data) {
-//     console.log(data);
-
-//     data.forEach((e) => {
-
-//         const div = document.createElement("div");
-//         div.className = "slide";
-//         const image = document.createElement("img");
-//         image.src = e.url_one;
-//         // image.cla
-//         const name = document.createElement("p");
-//         name.innerText = e.prod_name;
-//         const price = document.createElement("p");
-//         price.innerText = `₹${e.mrp}`;
-//         const discount = document.createElement("p");
-//         discount.innerText = e.discount;
-//         const addtocartbtn = document.createElement("button");
-//         addtocartbtn.innerHTML = "ADD TO CART";
-
-
-//         div.append(image, name, price, discount, addtocartbtn);
-//         document.querySelector(".brands").append(div);
-//     })
-// }
-
-// const trendingcontainer = [...document.querySelectorAll(".trending_container")];
-// const nxtbtn = [...document.querySelectorAll('.nxt_btn')];
-// const prebtn = [...document.querySelectorAll('.pre_btn')];
-// console.log('len', trendingcontainer.length);
-// trendingcontainer.forEach((e, i) => {
-//     let conatinerDimensions = e.getBoundingClientRect();
-//     let containerWidth = conatinerDimensions.width;
-
-//     nxtbtn[i] = addEventListener('click', () => {
-//         e.scrollLeft += containerWidth;
-//         console.log(i);
-
-//     })
-//     prebtn[i] = addEventListener('click', () => {
-//         console.log(i);
-//         e.scrollLeft -= containerWidth;
-//     })
-// })
 //  // //
 document.querySelector("#checkbtnheader").addEventListener('click', () => {
     // alert("opening ?? OPEN BTN");
@@ -236,46 +165,6 @@ document.querySelector("#closebtnheader").addEventListener('click', () => {
 })
 
 // // //
-
-
-// // // //
-// document.querySelector("#checkbtnnavigatons").addEventListener('click', () => {
-//     // alert("opening nav2 ?? OPEN BTN");
-//     document.querySelector(".mid_ul").style.left = 0;
-//     document.querySelector(".mid_ul").style.transition = "1s";
-//     document.querySelector("#checkbtnnavigatons").style.display = "none";
-//     document.querySelector("#closebtnnavigatons").style.display = "block";
-// })
-
-// document.querySelector("#closebtnnavigatons").addEventListener('click', () => {
-//     // alert("closing nav2 ?? Close BTN");
-//     document.querySelector(".mid_ul").style.left = "-100%";
-//     document.querySelector(".mid_ul").style.transition = "1s";
-//     document.querySelector("#closebtnnavigatons").style.display = "none";
-//     document.querySelector("#checkbtnnavigatons").style.display = "block";
-// })
-
-
-// // // //
-
-// document.querySelector("#checkbtn").addEventListener('click', () => {
-//     // alert("opening");
-//     document.querySelector(".error").style.left = 0;
-//     document.querySelector(".error").style.transition = "10s";
-//     document.querySelector("#checkbtn").style.display = "none";
-//     document.querySelector("#closebtn").style.display = "block";
-// })
-
-// document.querySelector("#closebtn").addEventListener('click', () => {
-//     // alert("closing");
-//     document.querySelector(".error").style.left = "-100%";
-//     document.querySelector(".error").style.transition = "1s";
-//     document.querySelector("#checkbtn").style.display = "block";
-//     document.querySelector("#closebtn").style.display = "none";
-// })
-
-
-
 
 const searchdiv = document.querySelector("#mid");
 const search = document.querySelector("#inp");
@@ -336,7 +225,7 @@ async function getsugg(dataurl) {
 function select(e) {
     console.log((" hello", e));
     localStorage.setItem("clicked", JSON.stringify(e));
-    window.location.href = "Wellness/productDetails.html";
+    window.location.href = "productDetails.html";
 }
 
 // let nonsenseInp = document.querySelector("#inp");
@@ -362,7 +251,7 @@ document.querySelector("#inp").addEventListener("keypress", (e) => {
         // alert("hello")
         localStorage.setItem("search", searhTerm);
         document.querySelector("#inp").value = ""
-        window.location.href = "Wellness/productDetails.html";
+        window.location.href = "productDetails.html";
     }
     // console.log("hhheelloooo");
 })
@@ -371,7 +260,7 @@ document.querySelector("#inp").addEventListener("keypress", (e) => {
 
 // FOOTER SECTION JAVASCRIPT
 const subscription_arr = [];
-function subscribeToNetmedsClone() {
+function subscribeToNetmedsClone(event) {
     event.preventDefault();
     // alert("got")
     let subs_obj = {

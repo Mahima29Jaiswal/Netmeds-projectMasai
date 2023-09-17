@@ -151,10 +151,7 @@ margin-top: 2%;
   margin-right: 5%;
   margin-top: 2%; 
   
-  /* display: flex;
-  justify-content: center;
-  -webkit-box-align: center;
-  flex-direction: column; */
+  
   text-align: left;
 }
 
@@ -229,24 +226,7 @@ p {
   text-align: center;
   /*color: rgb(83, 83, 83);*/
 }
-/* .txt {
-  font-size: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(110, 106, 106);
-  font-weight: 400;
-}
-.txt1 {
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(58, 57, 57);
-  font-weight: 400;
-}
-.txt2 {
-  font-size: 13px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(75, 74, 74);
-  font-weight: 400;
-} */
+
 #today {
   margin: 40px 10px;
   line-height: 25px;
@@ -276,6 +256,7 @@ p {
   color: rgb(107, 104, 104);
   font-size: smaller;
   font-weight: bold;
+  
 }
 .para3 {
   font-size: 15px;
